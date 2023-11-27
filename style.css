@@ -1,0 +1,213 @@
+/*body*/
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif; /* Substitua 'Sua-Familia-De-Fontes' pela sua escolha de fonte */
+    background-color: #f8f9fa; /* Cor de fundo */
+    color: #222324; /* Cor do texto */
+    margin: 0;
+  }
+
+  /* Estilo para o menu */
+.navbar {
+    background-color: #6b1760; /* Cor de fundo do menu */
+  }
+  
+  .navbar-brand img {
+    width: 200px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+  }
+  
+  .navbar-nav .nav-item {
+    margin-right: 15px; /* Espaçamento entre os itens do menu */
+  }
+  
+  .navbar-nav .nav-item a {
+    color: #ffffff; /* Cor do texto no estado normal */
+  }
+  
+  /* Estilo para o link ativo */
+  .navbar-nav .nav-item.active a {
+    color: #ffc107; /* Cor do texto no estado ativo */
+  }
+  
+  /* Estilo para o link no hover */
+  .navbar-nav .nav-item a:hover {
+    color: #fc7304;
+  }
+  
+ /* Ícone do botão toggle */
+.navbar-toggler-icon {
+  background-color: #fc7304; /* Cor do ícone no estado normal */
+  border: 1px solid #fff; /* Adiciona uma borda ao ícone para melhor visibilidade */
+}
+
+/* Ícone do botão toggle no hover e foco */
+.navbar-toggler-icon:hover, .navbar-toggler-icon:focus {
+  background-color: #ffc107; /* Cor do ícone no hover e foco */
+}
+  
+
+/* Estilos para o Carrossel */
+.carousel-item { position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; 
+  max-width: 100%; 
+  padding: 20px; 
+}
+
+/* Estilo para o texto dentro do overlay */
+.carousel-caption h3,
+.carousel-caption h4 {
+  color: #fff; 
+  font-size: 23px; 
+  line-height: 1.2; 
+  margin: 0;
+}
+
+/* Remover espaço interno no topo */
+.carousel-caption h3,
+.carousel-caption h4 {
+  margin-top: 0.5em; 
+}
+
+/* Ajustes para melhor responsividade */
+@media (max-width: 768px) {
+  .carousel-item {
+    height: auto; 
+  }
+
+  .carousel-caption {
+    padding: 10px;
+  }
+
+  /* Ajustes específicos de altura para cada item do carrossel em dispositivos menores */
+  .carousel-item:nth-child(1) {
+    min-height: 200px; 
+  }
+
+  .carousel-item:nth-child(2) {
+    min-height: 250px; 
+  }
+
+  .carousel-item:nth-child(3) {
+    min-height: 300px; 
+  }
+}
+
+  
+  /* Estilos para a seção de cards */
+.card-section {
+  margin-top: 180px; 
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  margin-bottom: 20px; 
+}
+
+.card .card-title {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+.card .card-text {
+  text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+  .card-section {
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+  
+  /* Estilo para a seção de quem somos */
+.quem-somos-section {
+  padding: 40px 0; 
+}
+
+.quem-somos-section .card {
+  text-align: center; 
+  padding: 20px; 
+  margin-bottom: 20px; 
+}
+
+.quem-somos-section .card h2 {
+  margin-bottom: 10px; 
+}
+
+.quem-somos-section .card p {
+  text-align: justify;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+}
+
+.banner .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff; 
+  text-align: center;}
+  
+  /* Estilos para o rodapé */
+.footer {
+    background-color: #6b1760; 
+    color: #ffffff; 
+    padding: 20px 0; 
+  }
+  
+  .footer img {
+    margin-bottom: 10px; 
+    margin-top: 50px;
+    align-items: center;
+  }
+  
+  /* Estilos para o menu no rodapé */
+  .footer ul {
+    list-style-type: none; 
+    padding: 10;
+  }
+  
+  .footer ul li {
+    display: list-item; 
+    margin-right: 30px; 
+    margin-top: 10px;
+    margin-left: 120px;
+  }
+  
+  .footer ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+  }
+  
+  .footer ul li a:hover {
+    text-decoration: underline;
+    color: #fc7304;
+  }
+
+.footer .copyright {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-align: center; 
+    background-color: #4b0041;
+}

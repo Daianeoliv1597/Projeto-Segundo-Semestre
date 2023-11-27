@@ -1,0 +1,247 @@
+<html>
+	<head>
+    <meta charset="utf-8" />
+		<title>MoneyMigle - O Aliado as suas despesas</title>
+    <!-- Aplicação realizada por DAIANE PEREIRA DE OLIVEIRA RA 2223105089 -->
+
+		<!-- Bootstrap início -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
+    <!-- Seus outros links e scripts aqui -->
+
+  <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="app.js"></script>
+
+	</head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg mt-1">
+      <div class="container">
+        <a class="navbar-brand" href="#index.html">
+           <img src="logo1.png" width="150" height="70" alt="MoneyMigle">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Cadastro de Despesas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consulta.html">Consulta de Despesas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carrossel -->
+  <div id="carouselExample" class="carousel slide mb-5" data-ride="carousel">
+  <div class="carousel-inner ">
+    <div class="carousel-item active ">
+      <img src="imagens/banner1.png" class="d-block w-100" alt="Slide 1">
+      <div class="carousel-caption d-md-block text-center">
+        <h2 class="display-4">Bem Vindo ao MoneyMigle</h2>
+        <h4>Nossa missão é transformar a sua jornada financeira em uma experiência amigável, interativa e organizada.</h4>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="imagens/banner2.png" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-md-block text-center">
+        <h2 class="display-4">No MoneyMingle</h2>
+        <h4>Não encaramos as finanças como uma barreira, mas como um elo para alcançar seus sonhos.</h4>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <img src="imagens/banner3.png" class="d-block w-100" alt="Slide 2">
+      <div class="carousel-caption d-md-block text-center">
+        <h2 class="display-4">Vamos juntos usar o MoneyMingle?</h2>
+        <h4>Onde o dinheiro encontra a interação, e a vida financeira torna-se verdadeiramente social.</h4>
+      </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+  </div>
+</div class="mb-0 mt-0">
+    <div class="container mb-0">
+      <div class="row">
+        <div class="col mb-3">
+          <h1 class="display-4 text-center">Registre aqui sua Nova Despesa</h1>
+        </div>
+      </div>
+
+      <div class="row mb-2 mt-3">
+        <div class="col-md-2">
+          <select class="form-control" id="ano">
+            <option value="">Ano</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+          </select>
+        </div>
+
+        <div class="col-md-2">
+          <select class="form-control" id="mes">
+            <option value="">Mês</option>
+            <option value="1">Janeiro</option>
+            <option value="2">Fevereiro</option>
+            <option value="3">Março</option>
+            <option value="4">Abril</option>
+            <option value="5">Maio</option>
+            <option value="6">Junho</option>
+            <option value="7">Julho</option>
+            <option value="8">Agosto</option>
+            <option value="9">Setembro</option>
+            <option value="10">Outubro</option>
+            <option value="11">Novembro</option>
+            <option value="12">Dezembro</option>
+          </select>
+        </div>
+        
+        <div class="col-md-2">
+          <input type="text" class="form-control" placeholder="Dia" id="dia" />
+        </div>
+
+        <div class="col-md-6">
+          <select class="form-control" id="tipo">
+            <option value="">Tipo</option>
+            <option value="1">Alimentação</option>
+            <option value="2">Educação</option>
+            <option value="3">Lazer</option>
+            <option value="4">Saúde</option>
+            <option value="5">Transporte</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8">
+          <input type="text" class="form-control" placeholder="Descrição" id="descricao" />
+        </div>
+
+        <div class="col-md-2">
+          <input type="text" class="form-control" placeholder="Valor" id="valor" />
+        </div>
+
+        <div class="col-md-2 d-flex justify-content-end">
+          <button type="button" class="btn btn-primary" onclick="cadastrarDespesa()">
+            <i class="fas fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalRegistraDespesa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div id="modal_titulo_div">
+            <h5 class="modal-title" id="modal_titulo"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="modal_conteudo"></div>
+          <div class="modal-footer">
+            <button type="button" data-dismiss="modal" id="modal_btn">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ <!-- Seção de Cards -->
+<div class="card-section mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagens/cardhome1.png" class="card-img-top" alt="Imagem do Card 1">
+        <div class="card-body">
+          <h5 class="card-title">Seu dinheiro, seu amigo!</h5>
+          <p class="card-text">Imagine suas finanças como um amigo de confiança, sempre ao seu lado para ajudar a orientar suas decisões. O MoneyMingle é mais do que uma ferramenta de gerenciamento financeiro; é o seu parceiro na construção de uma relação saudável e amigável com o seu dinheiro. Ao incorporar uma abordagem social às finanças, tornamos o processo mais acessível, menos intimidante e até mesmo divertido.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagens/cardhome2.png" class="card-img-top" alt="Imagem do Card 2">
+        <div class="card-body">
+          <h5 class="card-title">Aprendendo a economizar</h5>
+          <p class="card-text">Aqui, cada interação com sua vida financeira é uma oportunidade para aprendizado e crescimento. Ao "Mingle" com o seu dinheiro, você não apenas acompanha despesas e receitas, mas também entende as nuances das suas escolhas financeiras. A interação financeira no MoneyMingle é projetada para ser intuitiva, educativa e, acima de tudo, capacitadora.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="imagens/cardhome3.png" class="card-img-top" alt="Imagem do Card 3">
+        <div class="card-body">
+          <h5 class="card-title">Organizando suas Finanças</h5>
+          <p class="card-text">Queremos desmistificar a ideia de que organizar as finanças é uma tarefa árdua. Com o MoneyMingle, a organização torna-se uma jornada descomplicada. Nossa interface moderna e prática é projetada para oferecer uma visão clara e organizada das suas finanças, permitindo que você tome decisões mais acertivas e alcance seus objetivos.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="footer mt-5">
+  <div class="container">
+    <div class="row">
+      <!-- Logo do rodapé -->
+      <div class="col-md-3">
+        <img src="logo1.png" width="220" height="90" alt="Logo do Rodapé">
+      </div>
+      <!-- Menu do rodapé -->
+      <div class="col-md-6">
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="fale-conosco.html">Fale Conosco</a></li>
+          <li class="list-inline-item"><a href="politicasdeprivacidade.html">Políticas de Privacidade</a></li>
+          <li class="list-inline-item"><a href="termos-uso.html">Termos de Uso</a></li>
+          <li class="list-inline-item"><a href="consulta.html">Consulta de Despesas</a></li>
+          <li class="list-inline-item"><a href="index.html">Cadastro de Despesas</a></li>
+        </ul>
+      </div>
+       <!-- Informações de contato -->
+    <div class="contact-info mb-3 mt-3 text-left">
+      <p>Precisa falar conosco?</p>
+      <p>Endereço: Rua Rubem Bertha</p>
+      <p>nº 123, São Paulo- SP</p>
+      <p>Email: faleconosco@moneymigle.com</p>
+      <p>Telefone: (11) 94785-9895</p>
+    </div>
+    <!-- Todos os direitos reservados -->
+    <div class="copyright text-center">
+      <p>&copy; 2023 MoneyMigle. Todos os direitos reservados.</p>
+    </div>
+
+  </div>
+</footer>
+  </body>	
+
+</html>

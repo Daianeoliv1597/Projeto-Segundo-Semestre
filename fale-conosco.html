@@ -1,0 +1,146 @@
+<html>
+	<head>
+    <meta charset="utf-8" />
+		<title>MoneyMigle - O Aliado as suas despesas</title>
+
+		<!-- Bootstrap início -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Bootstrap fim -->
+
+    <!-- Seus outros links e scripts aqui -->
+
+  <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <script src="app.js"></script>
+
+	</head>
+
+  <body>
+
+
+    <nav class="navbar navbar-expand-lg mb-0 mt-1">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+           <img src="logo1.png" width="150" height="70" alt="MoneyMigle">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Cadastro de Despesas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="consulta.html">Consulta de Despesas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+              </li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Banner e Título -->
+    <header class="banner">
+        <img src="imagens/bannerfale conosco.png" alt="Banner Image" class="img-fluid">
+        <div class="container text-center">
+            <h1>Estamos aqui,sempre que você precisar!</h1>
+        </div>
+    </header>
+    <!-- Formulário de Contato -->
+    <section class="contact-form mt-5">
+        <div class="container mt-5">
+            <h2>Fale Conosco</h2>
+            <form action="#" method="POST" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">Nome</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Sobrenome</label>
+                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Informações de Contato -->
+    <section class="contact-info mt-5">
+        <div class="container">
+            <h2>Informações de Contato</h2>
+            <p>Entre em contato conosco pelos meios abaixo:</p>
+            <p><strong>Endereço:</strong> Rua Rubem Bertha, nº 123, São Paulo-SP</p>
+            <p><strong>Telefone:</strong> (11) 94785-9895</p>
+            <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, das 9h às 18h</p>
+        </div>
+    </section>
+
+<!-- Rodapé -->
+<footer class="footer mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo do rodapé -->
+        <div class="col-md-3">
+          <img src="logo1.png" width="220" height="90" alt="Logo do Rodapé">
+        </div>
+        <!-- Menu do rodapé -->
+        <div class="col-md-6">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="fale-conosco.html">Fale Conosco</a></li>
+            <li class="list-inline-item"><a href="politicasdeprivacidade.html">Políticas de Privacidade</a></li>
+            <li class="list-inline-item"><a href="termos-uso.html">Termos de Uso</a></li>
+            <li class="list-inline-item"><a href="consulta.html">Consulta de Despesas</a></li>
+            <li class="list-inline-item"><a href="index.html">Cadastro de Despesas</a></li>
+          </ul>
+        </div>
+         <!-- Informações de contato -->
+      <div class="contact-info mb-3 mt-3 text-left">
+        <p>Precisa falar conosco?</p>
+        <p>Endereço: Rua Rubem Bertha</p>
+        <p>nº 123, São Paulo- SP</p>
+        <p>Email: faleconosco@moneymigle.com</p>
+        <p>Telefone: (11) 94785-9895</p>
+      </div>
+      <!-- Todos os direitos reservados -->
+      <div class="copyright text-center">
+        <p>&copy; 2023 MoneyMigle. Todos os direitos reservados.</p>
+      </div>
+  
+    </div>
+  </footer>
+    </body>	
+  
+  <!-- Bootstrap JavaScript (Necessário para funcionalidades como o menu responsivo) -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+  </html>
